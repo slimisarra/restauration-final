@@ -123,3 +123,21 @@ QSqlQueryModel * fourn::rechercher(QString code)
 
     return model;
 }
+bool fourn::verifierId(QString code)
+{
+
+    QSqlQuery query;
+    QString n;
+
+            query.exec("SELECT CODE from FOURN");
+            while (query.next())
+            {
+                n=query.value("code").toString();
+                if (n==code)
+                {
+                    return true;
+                }
+            }
+    return false;
+
+      }

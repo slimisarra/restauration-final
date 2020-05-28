@@ -156,3 +156,22 @@ model->setQuery("select * from produit where qt<10");
 
     return model;
 }
+bool produit::verifierId(QString code)
+{
+
+    QSqlQuery query;
+    QString n;
+
+            query.exec("SELECT CODE from PRODUIT");
+            while (query.next())
+            {
+                n=query.value("code").toString();
+                if (n==code)
+                {
+                    return true;
+                }
+            }
+    return false;
+
+      }
+

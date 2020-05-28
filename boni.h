@@ -26,6 +26,7 @@ class boni
     bool modifier(QString,QString,QString,QString,QString);
     QSqlQueryModel *rechercher(QString);
     QString  apercu_pdf();
+    bool verifierId(QString );
 
 private:
     QString pic,dateboni,codep,libelle,qtprod;

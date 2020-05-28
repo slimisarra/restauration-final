@@ -144,3 +144,21 @@ QString bonf:: apercu_pdf()
 
              return text ;
  }
+bool bonf::verifierId(QString pic)
+{
+
+    QSqlQuery query;
+    QString n;
+
+            query.exec("SELECT PIC from BONF");
+            while (query.next())
+            {
+                n=query.value("pic").toString();
+                if (n==pic)
+                {
+                    return true;
+                }
+            }
+    return false;
+
+      }

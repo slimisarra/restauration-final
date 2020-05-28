@@ -1,33 +1,27 @@
-#include "menu.h"
+#include "s.h"
+#include "prog.h"
 #include <QApplication>
 #include "connexion.h"
 #include <QMessageBox>
-
-#include <QDebug>
-
-
-
+#include <QtDebug>
+#include <QWidget>
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-   menu m;
+    prog w;
     connexion c;
-    bool test=c.ouvrircnx();
-        if(test)
-        {m.show();
-            QMessageBox::critical(nullptr, QObject::tr("Connexion avec succés"),
-                        QObject::tr("Bienvenue.\n"
-                                    ), QMessageBox::Cancel);
+    QMessageBox msgBox;
 
-    }
-        else
-            QMessageBox::critical(nullptr, QObject::tr("Connexion faible"),
-                        QObject::tr("Veillez rejoindre ultérieurement.\n"
-                                   ), QMessageBox::Cancel);
+    if(c.ouvrircnx())
+    {
 
-
-
-        return a.exec();
-    }
-
-
+     msgBox.setText("connexion avec succes.");
+     msgBox.exec();
+   w.show();
+     }
+    else
+    {
+        msgBox.setText("Echec.");
+        msgBox.exec(); }
+    return a.exec();
+}

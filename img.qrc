@@ -1,15 +1,22 @@
 <RCC>
     <qresource prefix="/new/prefix1">
         <file>img/1.png</file>
+        <file>img/500_F_232634055_nsd24iXrNY8eRpc9oJJu4YHPFLmDmYWP.jpg</file>
         <file>img/8774 - Copy.png</file>
         <file>img/8774.png</file>
         <file>img/2700165_4275d.jpg</file>
+        <file>img/37277382-menu-nourriture-plat-icône-du-bouton-carré-bleu.jpg</file>
         <file>img/95328977_251759359230590_3950026510974320640_n.png</file>
         <file>img/aa.png</file>
+        <file>img/aaa.jpg</file>
         <file>img/back.png</file>
         <file>img/backback.png</file>
         <file>img/bg.png</file>
+        <file>img/ee.png</file>
+        <file>img/eez.jpg</file>
         <file>img/facture.png</file>
+        <file>img/ff.png</file>
+        <file>img/food-plate-icon-special-cyan-blue-square-button-isolated-reflected-abstract-illustration-90193042.jpg</file>
         <file>img/icon-afficher2.png</file>
         <file>img/icon-ajout2.png</file>
         <file>img/icon-class.png</file>
@@ -18,12 +25,17 @@
         <file>img/icon-supp2 (1).png</file>
         <file>img/images.png</file>
         <file>img/kindpng_5047621.png</file>
+        <file>img/login.jpg</file>
+        <file>img/Red.svg.png</file>
         <file>img/refresh.png</file>
         <file>img/refresh_copy.png</file>
+        <file>img/rest.jpg</file>
+        <file>img/rrr.jpg</file>
+        <file>img/s.png</file>
+        <file>img/search.png</file>
         <file>img/selected.png</file>
         <file>img/selected2.png</file>
         <file>img/stat.png</file>
-        <file>img/Red.svg.png</file>
         <file>img/th.jpg</file>
     </qresource>
 </RCC>

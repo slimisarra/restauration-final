@@ -25,7 +25,7 @@ class fourn
     bool modifier(QString,QString,QString,QString,QString,QString,QString,QString);
     QSqlQueryModel *listerfourn();
     QSqlQueryModel *rechercher(QString);
-
+bool verifierId(QString );
 private:
     QString code,adr,tel,reg,fax,mail,dailliv,modepi;
 

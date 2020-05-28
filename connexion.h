@@ -1,6 +1,8 @@
 #ifndef CONNEXION_H
 #define CONNEXION_H
 #include <QSqlDatabase>
+#include <QDebug>
+
 
 class connexion
 {
@@ -10,5 +12,4 @@ public:
     bool ouvrircnx();
     void fermercnx();
 };
-
 #endif // CONNEXION_H

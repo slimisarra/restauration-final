@@ -25,6 +25,8 @@ class produit
     QSqlQueryModel *rechercher(QString);
     int stat_moins();
     int stat_plus();
+    bool verifierId(QString );
+
 private:
     QString code,libelle,catg,famil,dateprod;
     int prix,qt;
